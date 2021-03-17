@@ -1,0 +1,26 @@
+.EmployersPage {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'alp btl';
+}
+
+.Alphabet {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.AlpChild {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(5, auto);
+    align-items: start;
+    margin-left: 15px;
+    grid-template-columns: repeat(6, auto);
+    grid-area: alp;
+}
+
+.BirthdayList {
+
+    grid-area: btl;
+}
